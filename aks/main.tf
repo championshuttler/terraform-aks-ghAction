@@ -1,13 +1,4 @@
 terraform {
-  backend "azurerm" {
-    resource_group_name  = "shivamhpcc"
-    storage_account_name = "shivamhpcc"
-    container_name       = "tfstate"
-    key                  = "dev.terraform.tfstate"
-  }
-}
-
-terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
