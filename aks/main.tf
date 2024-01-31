@@ -33,7 +33,7 @@ resource "azurerm_kubernetes_cluster" "aks-gh-tf" {
   default_node_pool {
     name       = "default"
     node_count = var.node_count
-    vm_size    = "Standard_B2pts_v2"
+    vm_size    = "Standard_D2as_v4"
     
   }
 
