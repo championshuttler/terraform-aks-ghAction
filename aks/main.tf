@@ -42,6 +42,6 @@ resource "azurerm_kubernetes_cluster" "aks-gh-tf" {
   }
 
   tags = {
-    Environment = "Production"
+    Environment = "Development"
   }
 }
