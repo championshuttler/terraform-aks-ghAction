@@ -1,4 +1,14 @@
 terraform {
+  backend "azurerm" {
+    resource_group_name  = "shivamterraform"
+    storage_account_name = "shivamterraform"
+    container_name       = "shivamterraform"
+    key                  = "development.terraform.tfstate"
+  }
+}
+
+
+terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
