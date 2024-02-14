@@ -1,4 +1,4 @@
-# terraform-aks-ghAction
+# terraform-aks-gitHubAction
 
 This repository serves as demo on how to use Github Action to deploy and create terraform based AKS modules.
 
