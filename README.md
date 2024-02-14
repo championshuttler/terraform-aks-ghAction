@@ -4,7 +4,7 @@ This repository serves as a demonstration of using GitHub Actions to deploy and 
 
 ### Overview
 
-The Terraform state is stored in an Azure storage account The infrastructure is defined in the `main.tf` file.
+The Terraform state is stored in an Azure storage account The infrastructure is defined in the [aks/main.tf](https://github.com/championshuttler/terraform-aks-ghAction/blob/main/aks/main.tf) file.
 
 ### GitHub Workflows
 
@@ -14,7 +14,7 @@ The Terraform state is stored in an Azure storage account The infrastructure is 
 
 ### Usage
 
-Azure service principal credentials are used to authenticate into the Azure subscription. All sensitive information, such as credentials, is securely stored in GitHub Action Secrets and accessed via variables in the action files.
+Azure service principal credentials are used to authenticate into the Azure subscription. All sensitive information, such as credentials, is securely stored in GitHub Action Secrets and accessed via variables in the action files. For the demo purpose for now we trigger the actions manually but we can do some deployment or add some test infra in between the deployment and destruction workflow.
 
 ```yaml
 ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
@@ -27,9 +27,6 @@ ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
 This repository demonstrates a basic CI/CD pipeline using GitHub Actions. It automates the deployment and destruction of infrastructure on Azure using Terraform, promoting better development practices and ease of management.
 
-### Contributions
-
-Contributions are welcome. Please feel free to fork this repository and submit pull requests with improvements or additional features.
 
 ### License
 
